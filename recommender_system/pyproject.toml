@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "recommender-system"
+version = "0.1.0"
+description = ""
+authors = ["andresjaromezuk <andres.jaromezuk@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+dagster = "^1.9.6"
+dagster-webserver = "^1.9.6"
+pytest = "^8.3.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.dagster]
+module_name = "recommender_system.definitions"
+project_name = "recommender_system"

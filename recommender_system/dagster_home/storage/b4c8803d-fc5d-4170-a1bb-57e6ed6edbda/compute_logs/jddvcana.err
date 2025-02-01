@@ -1,0 +1,7 @@
+[32m2025-02-01 17:18:51 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - 29433 - LOGS_CAPTURED - Started capturing logs in process (pid: 29433).
+[32m2025-02-01 17:18:51 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - 29433 - transformed_data - STEP_START - Started execution of step "transformed_data".
+[32m2025-02-01 17:19:41 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - 29433 - transformed_data - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2025-02-01 17:19:41 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - transformed_data - Writing file at: /Users/andresjaromezuk/Desktop/MLOPS/dagster/recommender_system/dagster_home/storage/transformed_data using PickledObjectFilesystemIOManager...
+[32m2025-02-01 17:19:41 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - 29433 - transformed_data - ASSET_MATERIALIZATION - Materialized value transformed_data.
+[32m2025-02-01 17:19:41 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - 29433 - transformed_data - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2025-02-01 17:19:41 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - 29433 - transformed_data - STEP_SUCCESS - Finished execution of step "transformed_data" in 50.76s.

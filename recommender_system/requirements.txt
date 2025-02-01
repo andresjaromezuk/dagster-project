@@ -1,0 +1,6 @@
+python==3.12.7 
+dagster-mlflow==0.25.3 
+dagster-webserver==1.9.3  
+dagster==1.9.3 
+pandas==2.2.3
+tensorflow==2.16.2

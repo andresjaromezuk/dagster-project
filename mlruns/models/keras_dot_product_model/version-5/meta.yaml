@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1737501511159
+current_stage: None
+description: ''
+last_updated_timestamp: 1737501511159
+name: keras_dot_product_model
+run_id: 424308a38cb04298ad6f615f0415374f
+run_link: ''
+source: mlflow-artifacts:/111401149640533251/424308a38cb04298ad6f615f0415374f/artifacts/keras_dot_product_model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/111401149640533251/424308a38cb04298ad6f615f0415374f/artifacts/keras_dot_product_model
+user_id: null
+version: 5

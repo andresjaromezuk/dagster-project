@@ -1,0 +1,15 @@
+[32m2025-02-01 17:20:28 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - 30000 - LOGS_CAPTURED - Started capturing logs in process (pid: 30000).
+[32m2025-02-01 17:20:28 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - 30000 - model_stored - STEP_START - Started execution of step "model_stored".
+[32m2025-02-01 17:20:28 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - model_stored - Loading file from: /Users/andresjaromezuk/Desktop/MLOPS/dagster/recommender_system/dagster_home/storage/model_trained using PickledObjectFilesystemIOManager...
+[32m2025-02-01 17:20:28 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - 30000 - model_stored - LOADED_INPUT - Loaded input "model_trained" using input manager "io_manager", from output "result" of step "model_trained"
+[32m2025-02-01 17:20:28 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - 30000 - model_stored - STEP_INPUT - Got input "model_trained" of type "Any". (Type check passed).
+2025/02/01 17:20:28 WARNING mlflow.tensorflow: You are saving a TensorFlow Core model or Keras model without a signature. Inference with mlflow.pyfunc.spark_udf() will not work unless the model's pyfunc representation accepts pandas DataFrames as inference inputs.
+[31m2025/02/01 17:20:33 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.[0m
+Registered model 'keras_dot_product_model' already exists. Creating a new version of this model...
+2025/02/01 17:20:33 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: keras_dot_product_model, version 12
+Created version '12' of model 'keras_dot_product_model'.
+[32m2025-02-01 17:20:33 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - 30000 - model_stored - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2025-02-01 17:20:33 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - model_stored - Writing file at: /Users/andresjaromezuk/Desktop/MLOPS/dagster/recommender_system/dagster_home/storage/model_stored using PickledObjectFilesystemIOManager...
+[32m2025-02-01 17:20:33 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - 30000 - model_stored - ASSET_MATERIALIZATION - Materialized value model_stored.
+[32m2025-02-01 17:20:33 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - 30000 - model_stored - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2025-02-01 17:20:33 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b4c8803d-fc5d-4170-a1bb-57e6ed6edbda - 30000 - model_stored - STEP_SUCCESS - Finished execution of step "model_stored" in 5.3s.

@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/111401149640533251
+creation_time: 1735993847650
+experiment_id: '111401149640533251'
+last_update_time: 1735993847650
+lifecycle_stage: active
+name: recommender_system
