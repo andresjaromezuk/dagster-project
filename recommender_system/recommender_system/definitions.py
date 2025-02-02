@@ -1,6 +1,5 @@
-from dagster import Definitions, load_assets_from_modules, load_assets_from_package_module, define_asset_job, AssetSelection, AssetExecutionContext
+from dagster import Definitions, load_assets_from_modules, load_assets_from_package_module, define_asset_job, AssetSelection, AssetExecutionContext,EnvVar,AssetKey
 from dagster_dbt import DbtCliResource, dbt_assets
-from dagster import EnvVar,AssetKey
 from dagster_airbyte import AirbyteCloudResource,build_airbyte_assets
 from pathlib import Path
 from recommender_system.project import my_project
@@ -31,18 +30,20 @@ data_job = define_asset_job(
     config=job_data_config
 )
 
-defs = Definitions(
-    assets=all_assets,
-    resources={"airbyte": airbyte_instance, "dbt": DbtCliResource(project_dir=my_project) },
-    jobs=[
-        elt_job,
-        data_job,
-        #run_everything_job,
-        define_asset_job(
+training_job = define_asset_job(
             "only_training",
             # selection=['preprocessed_training_data', 'user2Idx', 'movie2Idx'],
             selection=AssetSelection.groups('recommender'),
             config=job_training_config
         )
+
+defs = Definitions(
+    assets=all_assets,
+    resources={"airbyte": airbyte_instance, "dbt": DbtCliResource(project_dir=my_project)},
+    jobs=[
+        elt_job,
+        data_job,
+        training_job,
+        #run_everything_job,
     ]
 )
